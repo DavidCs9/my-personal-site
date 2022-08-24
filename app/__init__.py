@@ -22,6 +22,7 @@ def send_mail(name, email, subject, message):
             msg=f"Subject:{subject}\n\nMessage: {message}\nName: {name} Email: {email}"
         )
 
+
 @app.route("/", methods=['GET', 'POST'])
 def home():
     name = request.form.get('name')
@@ -33,5 +34,3 @@ def home():
         send_mail(name, email, subject, message)
 
     return render_template("index.html")
-
-
