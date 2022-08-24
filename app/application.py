@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 
 
 def send_mail(name, email, subject, message):
