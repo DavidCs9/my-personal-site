@@ -34,3 +34,7 @@ def home():
         send_mail(name, email, subject, message)
 
     return render_template("index.html")
+
+
+if __name__ == "__main__":
+    application.run()
