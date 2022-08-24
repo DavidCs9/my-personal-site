@@ -11,7 +11,7 @@ def send_mail(name, email, subject, message):
     import smtplib
 
     EMAIL = "decsiqueiros198@gmail.com"
-    PSW = os.environ["PSW"]
+    PSW = os.environ['PSW']
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
