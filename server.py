@@ -1,4 +1,8 @@
 from flask import Flask, render_template, request
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -7,7 +11,7 @@ def send_mail(name, email, subject, message):
     import smtplib
 
     EMAIL = "decsiqueiros198@gmail.com"
-    PSW = "iewxblfvkqkagsxa"
+    PSW = os.environ["PSW"]
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
