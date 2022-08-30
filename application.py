@@ -30,8 +30,14 @@ def home():
 
     if request.method == 'POST':
         send_mail(name, email, subject, message)
+        return render_template("email.html")
 
     return render_template("index.html")
+
+
+@app.route("/email", methods=['GET'])
+def email():
+    return render_template("email.html")
 
 
 if __name__ == "__main__":
