@@ -7,205 +7,229 @@
 <html>
 	<head>
 		<title>David Castro</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+		      crossorigin="anonymous">
+		<link rel="stylesheet" href="static/assets/css/main.css"/>
 		<link rel="icon" href="static/favicon.ico">
 	</head>
 	<body class="is-preload">
 
 		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Home</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		<nav id="nav">
+			<ul class="container">
+				<li><a href="#top">Home</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
 		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="static/images/david.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>David Castro</strong>.</h1>
-							</header>
-							<p>I'm a Python developer.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
-						</div>
+		<article id="top" class="wrapper style1">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-5-large col-12-medium">
+						<span class="image fit"><img src="static/images/david.jpg" alt=""/></span>
+					</div>
+					<div class="col-8 col-7-large col-12-medium">
+						<header>
+							<h1>Hi. I'm <strong>David Castro</strong>.</h1>
+						</header>
+						<p>I'm a Python developer.</p>
+						<a href="#work" class="button large scrolly">Learn about what I do</a>
 					</div>
 				</div>
-			</article>
+			</div>
+		</article>
 
 		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's my favorites projects.</h2>
-						<p>All are code in Python.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style2">
-								<a href="http://www.mailerapp.fun/" class="image featured"><img src="static/images/mailer.png" width="284" height="269" alt="" /></a>
-								<h3><a href="http://www.mailerapp.fun/">Mailer Web Site</a></h3>
-								<p>A mailer web site where you can send and see mails using the sendgrid API.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style2">
-								<a href="https://github.com/DavidCs9/spotify_playlist/tree/master" class="image featured"><img src="static/images/spotify.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/spotify_playlist/tree/master">Spotify Top 100</a></h3>
-								<p>An script that create a spotify playlist of the top 100 billboard with any date.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style2">
-								<a href="https://github.com/DavidCs9/rain-alert" class="image featured"><img src="static/images/rain.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/rain-alert">Rain Alert Bot</a></h3>
-								<p>An script that sends messages using the twilio API when is going to rain.</p>
-							</section>
-						</div>
+		<article id="work" class="wrapper style2">
+			<div class="container">
+				<header>
+					<h2>Here's my favorites projects.</h2>
+					<p>All are code in Python.</p>
+				</header>
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+						        class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+						        aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+						        aria-label="Slide 3"></button>
 					</div>
-					<footer>
-						<p>I use Tkinter, Flask, Webscraping on my projects.</p>
-						<a href="#portfolio" class="button large scrolly">The rest of my projects</a>
-					</footer>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="http://www.mailerapp.fun/" class="image featured vw-50"><img
+									src="static/images/mailer_recortada.png " alt=""/></a>
+							<h2>Mailer Web Site</h2>
+							<p>A mailer web site where you can send and see mails using the sendgrid API.</p>
+						</div>
+						<div class="carousel-item">
+							<a href="https://github.com/DavidCs9/spotify_playlist/tree/master"
+							   class="image featured"><img src="static/images/spotify_recortada.png"
+							                               alt=""/></a>
+							<h2>Spotify Top 100</h2>
+							<p>An script that create a spotify playlist of the top 100 billboard with any date.</p>
+						</div>
+						<div class="carousel-item">
+							<a href="https://github.com/DavidCs9/rain-alert" class="image featured"><img
+									src="static/images/rain_recortada.png" alt=""/></a>
+							<h2>Rain Alert Bot</h2>
+							<p>An script that sends messages using the twilio API when is going to rain.</p>
+						</div>
+
+					</div>
 				</div>
-			</article>
+			</div>
+		</article>
 
 		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>My personal projects.</h2>
-						<p>You can click on the project to see the actual code.</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/DavidCs9/AmazonTracker" class="image featured"><img src="static/images/amazon.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/AmazonTracker">Amazon Price Tracker</a></h3>
-								<p>An script that track the price of an amazon product and send us a mail.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/DavidCs9/habit-tracker" class="image featured"><img src="static/images/habit_tracker.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/habit-tracker">Habit Tracker</a></h3>
-								<p>An script to visualize your habits using the pixela API.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/DavidCs9/snake-game" class="image featured"><img src="static/images/snake.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/snake-game">Snake Game</a></h3>
-								<p>The classic snake game using the graphic module "turtle".</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/DavidCs9/password-manager" class="image featured"><img src="static/images/password.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/password-manager">Password Manager</a></h3>
-								<p>App that manages your passwords using Tknter and JSON.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/DavidCs9/buildpong" class="image featured"><img src="static/images/pong.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/buildpong">Pong Game</a></h3>
-								<p>The classic pong game using Tkinter and Turtle GUI.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/DavidCs9/Camaro_WebScraping/blob/master/main.py" class="image featured"><img src="static/images/car.png" width="284" height="269" alt="" /></a>
-								<h3><a href="https://github.com/DavidCs9/Camaro_WebScraping/blob/master/main.py">Car WebScraping App</a></h3>
-								<p>An script that save data from car selling pages and save them in google docs.</p>
-							</article>
-						</div>
+		<article id="portfolio" class="wrapper style3">
+			<div class="container">
+				<header>
+					<h2>My personal projects.</h2>
+					<p>You can click on the project to see the actual code.</p>
+				</header>
+				<div class="row">
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/DavidCs9/AmazonTracker" class="image featured"><img
+									src="static/images/amazon.png" width="284" height="269" alt=""/></a>
+							<h3><a href="https://github.com/DavidCs9/AmazonTracker">Amazon Price Tracker</a></h3>
+							<p>An script that track the price of an amazon product and send us a mail.</p>
+						</article>
 					</div>
-					<footer>
-						<p>To see every project that I made visit my <a href="https://github.com/DavidCs9">GitHub</a> page</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/DavidCs9/habit-tracker" class="image featured"><img
+									src="static/images/habit_tracker.png" width="284" height="269" alt=""/></a>
+							<h3><a href="https://github.com/DavidCs9/habit-tracker">Habit Tracker</a></h3>
+							<p>An script to visualize your habits using the pixela API.</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/DavidCs9/snake-game" class="image featured"><img
+									src="static/images/snake.png" width="284" height="269" alt=""/></a>
+							<h3><a href="https://github.com/DavidCs9/snake-game">Snake Game</a></h3>
+							<p>The classic snake game using the graphic module "turtle".</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/DavidCs9/password-manager" class="image featured"><img
+									src="static/images/password.png" width="284" height="269" alt=""/></a>
+							<h3><a href="https://github.com/DavidCs9/password-manager">Password Manager</a></h3>
+							<p>App that manages your passwords using Tknter and JSON.</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/DavidCs9/buildpong" class="image featured"><img
+									src="static/images/pong.png" width="284" height="269" alt=""/></a>
+							<h3><a href="https://github.com/DavidCs9/buildpong">Pong Game</a></h3>
+							<p>The classic pong game using Tkinter and Turtle GUI.</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/DavidCs9/Camaro_WebScraping/blob/master/main.py"
+							   class="image featured"><img src="static/images/car.png" width="284" height="269" alt=""/></a>
+							<h3><a href="https://github.com/DavidCs9/Camaro_WebScraping/blob/master/main.py">Car
+								WebScraping App</a></h3>
+							<p>An script that save data from car selling pages and save them in google docs.</p>
+						</article>
+					</div>
 				</div>
-			</article>
+				<footer>
+					<p>To see every project that I made visit my <a href="https://github.com/DavidCs9">GitHub</a> page
+					</p>
+					<a href="#contact" class="button large scrolly">Get in touch with me</a>
+				</footer>
+			</div>
+		</article>
 
 		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Contact Me.</h2>
-						<p>I will reply as soon as possible.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
+		<article id="contact" class="wrapper style4">
+			<div class="container medium">
+				<header>
+					<h2>Contact Me.</h2>
+					<p>I will reply as soon as possible.</p>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<form method="post" action="#">
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<input type="text" name="name" id="name" placeholder="Name"/>
 								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://www.facebook.com/d4v1b" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/in/david-eduardo-castro-siqueiros-0204a2219/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/DavidCs9" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
+								<div class="col-6 col-12-small">
+									<input type="text" name="email" id="email" placeholder="Email"/>
+								</div>
+								<div class="col-12">
+									<input type="text" name="subject" id="subject" placeholder="Subject"/>
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Message"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message"/></li>
+										<li><input type="reset" value="Clear Form" class="alt"/></li>
+									</ul>
+								</div>
+							</div>
+						</form>
 					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> and David Castro</li>
+					<div class="col-12">
+						<hr/>
+						<h3>Find me on ...</h3>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/d4v1b" class="icon brands fa-facebook-f"><span
+									class="label">Facebook</span></a></li>
+							<li><a href="https://www.linkedin.com/in/david-eduardo-castro-siqueiros-0204a2219/"
+							       class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/DavidCs9" class="icon brands fa-github"><span class="label">Github</span></a>
+							</li>
+							<!--
+							<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+							<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+							<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+							<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+							<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+							<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+							<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+							-->
 						</ul>
-					</footer>
+						<hr/>
+					</div>
 				</div>
-			</article>
+				<footer>
+					<ul id="copyright">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a> and David Castro</li>
+					</ul>
+				</footer>
+			</div>
+		</article>
 
 		<!-- Scripts -->
-			<script src="static/assetsassets/js/jquery.min.js"></script>
-			<script src="static/assetsassets/js/jquery.scrolly.min.js"></script>
-			<script src="static/assetsassets/js/browser.min.js"></script>
-			<script src="static/assetsassets/js/breakpoints.min.js"></script>
-			<script src="static/assetsassets/js/util.js"></script>
-			<script src="static/assetsassets/js/main.js"></script>
+		<script src="static/assetsassets/js/jquery.min.js"></script>
+		<script src="static/assetsassets/js/jquery.scrolly.min.js"></script>
+		<script src="static/assetsassets/js/browser.min.js"></script>
+		<script src="static/assetsassets/js/breakpoints.min.js"></script>
+		<script src="static/assetsassets/js/util.js"></script>
+		<script src="static/assetsassets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		        crossorigin="anonymous"></script>
+
 
 	</body>
 </html>

@@ -2443,3 +2443,21 @@ input, select, textarea {
 					}
 
 	}
+
+#work img {
+	width: 60%;
+	margin: auto;
+}
+
+#work p{
+	padding-bottom: 15px;
+	font-size: 1.5rem;
+}
+
+#work h2 {
+	margin-bottom: 10px;
+}
+
+#work {
+	padding-bottom: 45px;
+}
